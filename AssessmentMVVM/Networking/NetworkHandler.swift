@@ -33,7 +33,6 @@ final class NetworkHandler {
                         do{
                             let decodedData = try JSONDecoder().decode(CountryModel.self, from: jsonData)
                             completion(decodedData.Response, nil)
-                            
                         } catch {
                             completion([], Errors.parseError)
                         }

@@ -7,20 +7,43 @@
 //
 
 import XCTest
+@testable import AssessmentMVVM
 
 class AssessmentMVVMTests: XCTestCase {
 
+    var countryViewModel: CountryViewModel!
+    let timeout = 5.0
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        countryViewModel = CountryViewModel()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        countryViewModel = nil
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testAsyncNetworkCall() {
+        
+        let expected = expectation(description: "async network call test")
+        let networkHandler = NetworkHandler.sharedInstance
+        networkHandler.fetchDataFromApi { (response, error) in
+            if error == nil {
+                expected.fulfill()
+            } else {
+                XCTFail()
+            }
+        }
+        waitForExpectations(timeout: timeout, handler: nil)
+    }
+    
+    func testgetDataFromApi() {
+        
+        let expected = expectation(description: "country data")
+        countryViewModel.getDataFromApi { (error) in
+            XCTAssertNil(error)
+            expected.fulfill()
+        }
+        waitForExpectations(timeout: timeout, handler: nil)
     }
 
     func testPerformanceExample() {

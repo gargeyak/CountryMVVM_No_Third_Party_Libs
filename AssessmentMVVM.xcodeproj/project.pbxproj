@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00089B2B219376220010DFA6 /* AssessmentMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00089B2A219376220010DFA6 /* AssessmentMVVMTests.swift */; };
 		00A1F29C218B3C5A002ADE3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1F29B218B3C5A002ADE3C /* AppDelegate.swift */; };
 		00A1F29E218B3C5A002ADE3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1F29D218B3C5A002ADE3C /* ViewController.swift */; };
 		00A1F2A1218B3C5A002ADE3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A1F29F218B3C5A002ADE3C /* Main.storyboard */; };
@@ -20,7 +21,20 @@
 		00A1F2BD218B9011002ADE3C /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1F2BC218B9011002ADE3C /* CountryViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		00089B2D219376220010DFA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00A1F290218B3C5A002ADE3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A1F297218B3C5A002ADE3C;
+			remoteInfo = AssessmentMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		00089B28219376220010DFA6 /* AssessmentMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssessmentMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00089B2A219376220010DFA6 /* AssessmentMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentMVVMTests.swift; sourceTree = "<group>"; };
+		00089B2C219376220010DFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A1F298218B3C5A002ADE3C /* AssessmentMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssessmentMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A1F29B218B3C5A002ADE3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00A1F29D218B3C5A002ADE3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00089B25219376220010DFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00A1F295218B3C5A002ADE3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +68,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00089B29219376220010DFA6 /* AssessmentMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				00089B2A219376220010DFA6 /* AssessmentMVVMTests.swift */,
+				00089B2C219376220010DFA6 /* Info.plist */,
+			);
+			path = AssessmentMVVMTests;
+			sourceTree = "<group>";
+		};
 		00A1F28F218B3C5A002ADE3C = {
 			isa = PBXGroup;
 			children = (
 				00A1F29A218B3C5A002ADE3C /* AssessmentMVVM */,
+				00089B29219376220010DFA6 /* AssessmentMVVMTests */,
 				00A1F299218B3C5A002ADE3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				00A1F298218B3C5A002ADE3C /* AssessmentMVVM.app */,
+				00089B28219376220010DFA6 /* AssessmentMVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +165,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00089B27219376220010DFA6 /* AssessmentMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00089B31219376220010DFA6 /* Build configuration list for PBXNativeTarget "AssessmentMVVMTests" */;
+			buildPhases = (
+				00089B24219376220010DFA6 /* Sources */,
+				00089B25219376220010DFA6 /* Frameworks */,
+				00089B26219376220010DFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00089B2E219376220010DFA6 /* PBXTargetDependency */,
+			);
+			name = AssessmentMVVMTests;
+			productName = AssessmentMVVMTests;
+			productReference = 00089B28219376220010DFA6 /* AssessmentMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		00A1F297218B3C5A002ADE3C /* AssessmentMVVM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00A1F2AA218B3C5F002ADE3C /* Build configuration list for PBXNativeTarget "AssessmentMVVM" */;
@@ -160,6 +210,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Ady;
 				TargetAttributes = {
+					00089B27219376220010DFA6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 00A1F297218B3C5A002ADE3C;
+					};
 					00A1F297218B3C5A002ADE3C = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
@@ -184,11 +238,19 @@
 			projectRoot = "";
 			targets = (
 				00A1F297218B3C5A002ADE3C /* AssessmentMVVM */,
+				00089B27219376220010DFA6 /* AssessmentMVVMTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		00089B26219376220010DFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00A1F296218B3C5A002ADE3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +264,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00089B24219376220010DFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00089B2B219376220010DFA6 /* AssessmentMVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00A1F294218B3C5A002ADE3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +288,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00089B2E219376220010DFA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00A1F297218B3C5A002ADE3C /* AssessmentMVVM */;
+			targetProxy = 00089B2D219376220010DFA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		00A1F29F218B3C5A002ADE3C /* Main.storyboard */ = {
@@ -239,6 +317,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		00089B2F219376220010DFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AssessmentMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ady.AssessmentMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssessmentMVVM.app/AssessmentMVVM";
+			};
+			name = Debug;
+		};
+		00089B30219376220010DFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AssessmentMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ady.AssessmentMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssessmentMVVM.app/AssessmentMVVM";
+			};
+			name = Release;
+		};
 		00A1F2A8218B3C5F002ADE3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -392,6 +508,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00089B31219376220010DFA6 /* Build configuration list for PBXNativeTarget "AssessmentMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00089B2F219376220010DFA6 /* Debug */,
+				00089B30219376220010DFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		00A1F293218B3C5A002ADE3C /* Build configuration list for PBXProject "AssessmentMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
