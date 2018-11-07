@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00089B3B21938BA90010DFA6 /* AssessmentMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00089B3A21938BA90010DFA6 /* AssessmentMVVMTests.swift */; };
+		00089B49219390BE0010DFA6 /* AssessmentMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00089B48219390BE0010DFA6 /* AssessmentMVVMUITests.swift */; };
 		00A1F29C218B3C5A002ADE3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1F29B218B3C5A002ADE3C /* AppDelegate.swift */; };
 		00A1F29E218B3C5A002ADE3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1F29D218B3C5A002ADE3C /* ViewController.swift */; };
 		00A1F2A1218B3C5A002ADE3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A1F29F218B3C5A002ADE3C /* Main.storyboard */; };
@@ -29,12 +30,22 @@
 			remoteGlobalIDString = 00A1F297218B3C5A002ADE3C;
 			remoteInfo = AssessmentMVVM;
 		};
+		00089B4B219390BE0010DFA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00A1F290218B3C5A002ADE3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A1F297218B3C5A002ADE3C;
+			remoteInfo = AssessmentMVVM;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00089B3821938BA90010DFA6 /* AssessmentMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssessmentMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00089B3A21938BA90010DFA6 /* AssessmentMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentMVVMTests.swift; sourceTree = "<group>"; };
 		00089B3C21938BA90010DFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00089B46219390BE0010DFA6 /* AssessmentMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssessmentMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00089B48219390BE0010DFA6 /* AssessmentMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentMVVMUITests.swift; sourceTree = "<group>"; };
+		00089B4A219390BE0010DFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A1F298218B3C5A002ADE3C /* AssessmentMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssessmentMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A1F29B218B3C5A002ADE3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00A1F29D218B3C5A002ADE3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +63,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		00089B3521938BA90010DFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00089B43219390BE0010DFA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,11 +95,21 @@
 			path = AssessmentMVVMTests;
 			sourceTree = "<group>";
 		};
+		00089B47219390BE0010DFA6 /* AssessmentMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00089B48219390BE0010DFA6 /* AssessmentMVVMUITests.swift */,
+				00089B4A219390BE0010DFA6 /* Info.plist */,
+			);
+			path = AssessmentMVVMUITests;
+			sourceTree = "<group>";
+		};
 		00A1F28F218B3C5A002ADE3C = {
 			isa = PBXGroup;
 			children = (
 				00A1F29A218B3C5A002ADE3C /* AssessmentMVVM */,
 				00089B3921938BA90010DFA6 /* AssessmentMVVMTests */,
+				00089B47219390BE0010DFA6 /* AssessmentMVVMUITests */,
 				00A1F299218B3C5A002ADE3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +119,7 @@
 			children = (
 				00A1F298218B3C5A002ADE3C /* AssessmentMVVM.app */,
 				00089B3821938BA90010DFA6 /* AssessmentMVVMTests.xctest */,
+				00089B46219390BE0010DFA6 /* AssessmentMVVMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +212,24 @@
 			productReference = 00089B3821938BA90010DFA6 /* AssessmentMVVMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		00089B45219390BE0010DFA6 /* AssessmentMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00089B4D219390BE0010DFA6 /* Build configuration list for PBXNativeTarget "AssessmentMVVMUITests" */;
+			buildPhases = (
+				00089B42219390BE0010DFA6 /* Sources */,
+				00089B43219390BE0010DFA6 /* Frameworks */,
+				00089B44219390BE0010DFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00089B4C219390BE0010DFA6 /* PBXTargetDependency */,
+			);
+			name = AssessmentMVVMUITests;
+			productName = AssessmentMVVMUITests;
+			productReference = 00089B46219390BE0010DFA6 /* AssessmentMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		00A1F297218B3C5A002ADE3C /* AssessmentMVVM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00A1F2AA218B3C5F002ADE3C /* Build configuration list for PBXNativeTarget "AssessmentMVVM" */;
@@ -214,6 +261,10 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 00A1F297218B3C5A002ADE3C;
 					};
+					00089B45219390BE0010DFA6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 00A1F297218B3C5A002ADE3C;
+					};
 					00A1F297218B3C5A002ADE3C = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
@@ -239,12 +290,20 @@
 			targets = (
 				00A1F297218B3C5A002ADE3C /* AssessmentMVVM */,
 				00089B3721938BA90010DFA6 /* AssessmentMVVMTests */,
+				00089B45219390BE0010DFA6 /* AssessmentMVVMUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00089B3621938BA90010DFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00089B44219390BE0010DFA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,6 +331,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00089B42219390BE0010DFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00089B49219390BE0010DFA6 /* AssessmentMVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00A1F294218B3C5A002ADE3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +361,11 @@
 			isa = PBXTargetDependency;
 			target = 00A1F297218B3C5A002ADE3C /* AssessmentMVVM */;
 			targetProxy = 00089B3D21938BA90010DFA6 /* PBXContainerItemProxy */;
+		};
+		00089B4C219390BE0010DFA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00A1F297218B3C5A002ADE3C /* AssessmentMVVM */;
+			targetProxy = 00089B4B219390BE0010DFA6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -352,6 +424,42 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AssessmentMVVM.app/AssessmentMVVM";
+			};
+			name = Release;
+		};
+		00089B4E219390BE0010DFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AssessmentMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ady.AssessmentMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssessmentMVVM;
+			};
+			name = Debug;
+		};
+		00089B4F219390BE0010DFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AssessmentMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ady.AssessmentMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AssessmentMVVM;
 			};
 			name = Release;
 		};
@@ -513,6 +621,15 @@
 			buildConfigurations = (
 				00089B3F21938BA90010DFA6 /* Debug */,
 				00089B4021938BA90010DFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00089B4D219390BE0010DFA6 /* Build configuration list for PBXNativeTarget "AssessmentMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00089B4E219390BE0010DFA6 /* Debug */,
+				00089B4F219390BE0010DFA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

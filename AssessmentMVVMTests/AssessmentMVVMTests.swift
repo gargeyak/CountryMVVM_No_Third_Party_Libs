@@ -28,8 +28,10 @@ class AssessmentMVVMTests: XCTestCase {
         
         let expected = expectation(description: "async network call test")
         let networkHandler = NetworkHandler.sharedInstance
-        networkHandler.fetchDataFromApi { (response, error) in
+        networkHandler.fetchDataFromApi { (responseArr, error) in
             if error == nil{
+                XCTAssertNotNil(responseArr)
+                XCTAssertEqual(responseArr.count, 250)
                 expected.fulfill()
             }else{
                 XCTFail()
