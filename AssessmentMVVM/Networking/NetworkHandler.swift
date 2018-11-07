@@ -10,9 +10,9 @@ import Foundation
 
 let apiUrl = "http://countryapi.gear.host/v1/Country/getCountries"
 
-final class NetworkHandler: NSObject {
+final class NetworkHandler {
     
-    private override init() {}
+    private init() {}
     static let sharedInstance = NetworkHandler()
     
     
@@ -22,19 +22,24 @@ final class NetworkHandler: NSObject {
             completion([], Errors.incorrectUrl)
             return
         }
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            
-            if error == nil {
+        
+        DispatchQueue.global().async {
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
                 
-                do{
-                    let decodedData = try JSONDecoder().decode(CountryModel.self, from: data!)
-                    completion(decodedData.Response, nil)
-                }catch{
-                    completion([], Errors.parseError)
+                DispatchQueue.main.async {
+                    if error != nil {
+                        completion([], Errors.fetchError)
+                    } else if let jsonData = data {
+                        do{
+                            let decodedData = try JSONDecoder().decode(CountryModel.self, from: jsonData)
+                            completion(decodedData.Response, nil)
+                            
+                        } catch {
+                            completion([], Errors.parseError)
+                        }
+                    }
                 }
-            }else{
-                completion([], Errors.fetchError)
-            }
-        }.resume()
+                }.resume()
+        }
     }
 }
