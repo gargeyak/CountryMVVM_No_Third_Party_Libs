@@ -15,10 +15,12 @@ class AssessmentMVVMTests: XCTestCase {
     let timeout = 5.0
     
     override func setUp() {
+       
         countryViewModel = CountryViewModel()
     }
 
     override func tearDown() {
+       
         countryViewModel = nil
     }
 
@@ -27,25 +29,26 @@ class AssessmentMVVMTests: XCTestCase {
         let expected = expectation(description: "async network call test")
         let networkHandler = NetworkHandler.sharedInstance
         networkHandler.fetchDataFromApi { (response, error) in
-            if error == nil {
+            if error == nil{
                 expected.fulfill()
-            } else {
+            }else{
                 XCTFail()
             }
         }
         waitForExpectations(timeout: timeout, handler: nil)
     }
     
-    func testgetDataFromApi() {
-        
-        let expected = expectation(description: "country data")
+    func testGetDataFromApi() {
+     
+        let expected = expectation(description: "Get data from Api")
         countryViewModel.getDataFromApi { (error) in
             XCTAssertNil(error)
             expected.fulfill()
         }
         waitForExpectations(timeout: timeout, handler: nil)
+        
     }
-
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
